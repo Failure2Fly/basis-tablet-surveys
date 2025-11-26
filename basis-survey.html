@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Survey Launcher</title>
+   <link rel="stylesheet"  href="./basis-survey.css" />
+</head>
+<header>
+   <img src="https://basised.com/wp-content/uploads/2024/05/basis-az-logo.svg"/>
+   <img src="https://basised.com/wp-content/uploads/2024/05/basis-tx-logo.svg"/>
+   <img src="https://basised.com/wp-content/uploads/2024/05/basis-la-logo.svg"/>
+   <img src="https://basised.com/wp-content/uploads/2024/05/basis-dc-logo.svg"/>         
+</header>
+<body>
+   <h1>Select a Survey</h1>
+
+   <div class="surveys">
+      <button class="survey-btn" onclick="ToggleModal('frontOfficeModal')">Front Office & Visitor Experience Survey</button>
+      <button class="survey-btn" onclick="ToggleModal('schoolTourModal')">School Tour Experience Survey</button>
+      <button class="survey-btn" onclick="ToggleModal('familyWithdrawalModal')">Family Withdrawal & Transition Survey</button>
+   </div>
+   <div>
+
+   <dialog id="frontOfficeModal">
+      <iframe id="externalSiteIframe" src="https://survey.alchemer.com/s3/8571952/BASIS-Front-Office-Visitor-Experience" frameborder="0"></iframe>
+      <button class="survey-close-btn" onclick="ToggleModal('frontOfficeModal')">X</button>
+   </dialog>
+   <dialog id="schoolTourModal">
+      <iframe id="externalSiteIframe" src="https://survey.alchemer.com/s3/8571930/BASIS-School-Tour-Experience" frameborder="0"></iframe>
+      <button class="survey-close-btn" onclick="ToggleModal('schoolTourModal')">X</button>
+   </dialog>
+   <dialog id="familyWithdrawalModal">
+      <iframe id="externalSiteIframe" src="https://survey.alchemer.com/s3/8571961/BASIS-Family-Withdrawal-Transition" frameborder="0"></iframe>
+      <button class="survey-close-btn" onclick="ToggleModal('familyWithdrawalModal')">X</button>
+   </dialog>
+
+   </div>
+</body>
+<script src="./basis-survey.js"></script>
+<footer>
+    
+</footer>
+</html>
