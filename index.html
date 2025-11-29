@@ -9,29 +9,29 @@
    <img src="https://basised.com/wp-content/uploads/2024/05/basis-az-logo.svg"/>
    <img src="https://basised.com/wp-content/uploads/2024/05/basis-tx-logo.svg"/>
    <img src="https://basised.com/wp-content/uploads/2024/05/basis-la-logo.svg"/>
-   <img src="https://basised.com/wp-content/uploads/2024/05/basis-dc-logo.svg"/>         
+   <!-- <img src="https://basised.com/wp-content/uploads/2024/05/basis-dc-logo.svg"/>          -->
 </header>
 <body>
    <h1>Select a Survey</h1>
 
    <div class="surveys">
-      <button class="survey-btn" onclick="ToggleModal('frontOfficeModal')">Front Office & Visitor Experience Survey</button>
-      <button class="survey-btn" onclick="ToggleModal('schoolTourModal')">School Tour Experience Survey</button>
-      <button class="survey-btn" onclick="ToggleModal('familyWithdrawalModal')">Family Withdrawal & Transition Survey</button>
+      <button class="survey-btn" onclick="ToggleModal('frontOfficeModal', 'frontOfficeIframe')">Front Office & Visitor Experience Survey</button>
+      <button class="survey-btn" onclick="ToggleModal('schoolTourModal', 'schoolTourIframe')">School Tour Experience Survey</button>
+      <button class="survey-btn" onclick="ToggleModal('familyWithdrawalModal', 'familyWithdrawalIframe')">Family Withdrawal & Transition Survey</button>
    </div>
    <div>
 
    <dialog id="frontOfficeModal">
-      <iframe id="externalSiteIframe" src="https://survey.alchemer.com/s3/8571952/BASIS-Front-Office-Visitor-Experience" frameborder="0"></iframe>
-      <button class="survey-close-btn" onclick="ToggleModal('frontOfficeModal')">X</button>
+      <iframe id="frontOfficeIframe" src="https://survey.alchemer.com/s3/8571952/BASIS-Front-Office-Visitor-Experience" frameborder="0"></iframe>
+      <button class="survey-close-btn" onclick="ToggleModal('frontOfficeModal', 'frontOfficeIframe')">X</button>
    </dialog>
    <dialog id="schoolTourModal">
-      <iframe id="externalSiteIframe" src="https://survey.alchemer.com/s3/8571930/BASIS-School-Tour-Experience" frameborder="0"></iframe>
-      <button class="survey-close-btn" onclick="ToggleModal('schoolTourModal')">X</button>
+      <iframe id="schoolTourIframe" src="https://survey.alchemer.com/s3/8571930/BASIS-School-Tour-Experience" frameborder="0"></iframe>
+      <button class="survey-close-btn" onclick="ToggleModal('schoolTourModal', 'schoolTourIframe')">X</button>
    </dialog>
    <dialog id="familyWithdrawalModal">
-      <iframe id="externalSiteIframe" src="https://survey.alchemer.com/s3/8571961/BASIS-Family-Withdrawal-Transition" frameborder="0"></iframe>
-      <button class="survey-close-btn" onclick="ToggleModal('familyWithdrawalModal')">X</button>
+      <iframe id="familyWithdrawalIframe" src="https://survey.alchemer.com/s3/8571961/BASIS-Family-Withdrawal-Transition" frameborder="0"></iframe>
+      <button class="survey-close-btn" onclick="ToggleModal('familyWithdrawalModal', 'familyWithdrawalIframe')">X</button>
    </dialog>
 
    </div>
