@@ -87,6 +87,10 @@ h1 {
   align-items: center;
   gap: 1.5rem;
   padding-top: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);  
 }
 
 .surveys button {
